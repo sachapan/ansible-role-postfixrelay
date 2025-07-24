@@ -2,30 +2,8 @@
 - name: Converge
   hosts: all
   gather_facts: false
-  # tasks:
-  # - name: Run the postfixrelay role
   roles:
     - role: sachapan.postfixrelay
-    # - name: Check postfix is installed
-    #   ansible.builtin.package:
-    #     name: postfix
-    #     state: present
-    #   check_mode: true
-    # - name: Check postfix is enabled
-    #   ansible.builtin.service:
-    #     name: postfix
-    #     state: enabled
-    #   check_mode: true
-    # - name: Check relayhost is set
-    #   ansible.builtin.lineinfile:
-    #     name: /etc/postfix
-
-    # - name: Check postfix is running
-    #   ansible.builtin.service:
-    #     name: postfix
-    #     state: running
-    #   check_mode: true
-
-    # - name: Replace this task with one that validates your content
-    # ansible.builtin.debug:
-    # msg: "This is the effective test"
+  # - name: Replace this task with one that validates your content
+  # ansible.builtin.debug:
+  # msg: "This is the effective test"
