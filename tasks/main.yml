@@ -20,4 +20,4 @@
     line: "{{ item }}"
   with_items:
     - 'relayhost = {{ relay }}'
-  notify: restart postfix
+  notify: Restart postfix
